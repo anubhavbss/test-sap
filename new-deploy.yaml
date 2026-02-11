@@ -23,7 +23,7 @@ spec:
        
       containers:
       
-      - image: ghcr.io/anubhavbss/test-sap:21248a8f2aab4b13301b01115313e061605bc054
+      - image: ghcr.io/anubhavbss/test-sap:1402b714fd594d79d49ede6e5e04c501dd656b42
         name: test-sap
         resources: {}
 status: {}
