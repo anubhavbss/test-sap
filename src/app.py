@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, Kubernetes!"
+    return "Hi, Kubernetes!"
 
 if __name__ == "__main__":
     # listen on 0.0.0.0 so Kubernetes can access it
