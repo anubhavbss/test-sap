@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: new-image
+  name: new-image
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: new-image
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: new-image
+    spec:
+
+      imagePullSecrets:
+        - name: ghcr-secret
+       
+      containers:
+      
+      - image: ghcr.io/anubhavbss/grade-api-gitops:v1
+        name: grade-api-gitops
+        resources: {}
+status: {}
