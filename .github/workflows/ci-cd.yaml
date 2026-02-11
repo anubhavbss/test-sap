@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
   build-and-push:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -56,4 +56,5 @@ jobs:
           
           # Push
           git push -f https://${GIT_TOKEN}@github.com/anubhavbss/test-sap.git main
+
 
